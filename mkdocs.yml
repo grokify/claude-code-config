@@ -3,10 +3,18 @@ docs_dir: src
 theme: readthedocs
 nav:
     - 'Home': 'index.md'
-    - 'Build-Lint Check': 'claude_build-lint-check.md'
-    - 'DevOps Infrastructure Project': 'claude_devops-infrastructure-project.md'
-    - 'Enterprise Backend Service': 'claude_enterprise-backend-service.md'
-    - 'Mobile App Development - React Native': 'claude_mobile-app-development-react-native.md'
-    - 'Open Soruce Liberary Development': 'claude_open-source-library-development.md'
-    - 'Python Data Science Project': 'claude_python-data-science-project.md'
-    - 'Web Application Development Team': 'claude_web-application-development-team.md'
+    - 'Claude.md':
+        - 'Build-Lint Check': 'claude.md/claude_build-lint-check.md'
+        - 'DevOps Infrastructure Project': 'claude.md/claude_devops-infrastructure-project.md'
+        - 'Enterprise Backend Service': 'claude.md/claude_enterprise-backend-service.md'
+        - 'Mobile App Development - React Native': 'claude.md/claude_mobile-app-development-react-native.md'
+        - 'Open Soruce Liberary Development': 'claude.md/claude_open-source-library-development.md'
+        - 'Python Data Science Project': 'claude.md/claude_python-data-science-project.md'
+        - 'Web Application Development Team': 'claude.md/claude_web-application-development-team.md'
+    - 'Commands':
+        - 'API Test': 'commands/api-test.md'
+        - 'Code Review': 'commands/code-review.md'
+        - 'Document Feature': 'commands/document-feature.md'
+        - 'Integrate Parallel Work': 'commands/integrate-parallel-work.md'
+        - 'Parallel Agents': 'commands/parallel-agents.md'
+        - 'Parallel Work': 'commands/parallel-work.md'
