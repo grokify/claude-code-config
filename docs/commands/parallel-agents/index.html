@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Parallel Agents - Claude.md Files</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Parallel Agents";
+        var mkdocs_page_input_path = "commands/parallel-agents.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Claude.md Files
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Claude.md</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../claude.md/claude_build-lint-check/">Build-Lint Check</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../claude.md/claude_devops-infrastructure-project/">DevOps Infrastructure Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../claude.md/claude_enterprise-backend-service/">Enterprise Backend Service</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../claude.md/claude_mobile-app-development-react-native/">Mobile App Development - React Native</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../claude.md/claude_open-source-library-development/">Open Soruce Liberary Development</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../claude.md/claude_python-data-science-project/">Python Data Science Project</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../claude.md/claude_web-application-development-team/">Web Application Development Team</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Commands</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../api-test/">API Test</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../code-review/">Code Review</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../document-feature/">Document Feature</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../integrate-parallel-work/">Integrate Parallel Work</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Parallel Agents</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#phase-1-setup-worktrees">PHASE 1 - SETUP WORKTREES:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#phase-2-spawn-subagents">PHASE 2 - SPAWN SUBAGENTS:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#phase-3-coordination">PHASE 3 - COORDINATION:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#phase-4-final-summary">PHASE 4 - FINAL SUMMARY:</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../parallel-work/">Parallel Work</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Claude.md Files</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Commands &raquo;</li><li>Parallel Agents</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="parallel-agents-command">Parallel Agents Command</h1>
+<p>I want to develop features in parallel using Git worktrees and subagents: $ARGUMENTS</p>
+<p>You are in the parent folder of the main repo. You will need to change to the main repo
+folder to create the worktrees.</p>
+<p>Please execute this complete workflow:</p>
+<h2 id="phase-1-setup-worktrees">PHASE 1 - SETUP WORKTREES:</h2>
+<p>For each feature mentioned:</p>
+<ol>
+<li>Create a worktree at ../expense-tracker-[feature-name] with branch feature/[feature-name]</li>
+<li>Set up the development environment in each worktree (if needed)</li>
+<li>List all worktrees created</li>
+</ol>
+<h2 id="phase-2-spawn-subagents">PHASE 2 - SPAWN SUBAGENTS:</h2>
+<p>For each feature, run a subagent in parallel with these instructions:</p>
+<ul>
+<li>You are working in the expense-tracker-[feature-name] worktree directory</li>
+<li>This is a completely isolated development environment</li>
+<li>Implement the [feature-name] feature with full functionality</li>
+<li>Include proper testing and error handling</li>
+<li>Compile and run tests, but don't attempt to run the application (e.g., don't do "npm run" or "npm run dev &amp;", etc.) </li>
+<li>When complete, write a detailed summary in [feature-name].work.txt in the main expense-tracker-ai directory</li>
+<li>The summary should include: what was implemented, files created/modified, dependencies added, testing approach, and integration notes</li>
+</ul>
+<h2 id="phase-3-coordination">PHASE 3 - COORDINATION:</h2>
+<ul>
+<li>Monitor all subagents working in parallel</li>
+<li>Ensure each subagent completes their feature implementation</li>
+<li>Verify each subagent creates their work summary file</li>
+</ul>
+<h2 id="phase-4-final-summary">PHASE 4 - FINAL SUMMARY:</h2>
+<p>After all subagents complete:</p>
+<ol>
+<li>Read all the .work.txt files created by subagents</li>
+<li>Provide a comprehensive summary of what was accomplished</li>
+<li>List all features implemented and their status</li>
+<li>Provide next steps for integration</li>
+</ol>
+<p>Execute this complete parallel development workflow.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../integrate-parallel-work/" class="btn btn-neutral float-left" title="Integrate Parallel Work"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../parallel-work/" class="btn btn-neutral float-right" title="Parallel Work">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../integrate-parallel-work/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../parallel-work/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
