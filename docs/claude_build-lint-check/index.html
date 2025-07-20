@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Build-Lint Check - Claude.md Files</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Build-Lint Check";
+        var mkdocs_page_input_path = "claude_build-lint-check.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Claude.md Files
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Build-Lint Check</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#critical-rules-do-not-violate">Critical Rules - DO NOT VIOLATE</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#typescript-and-linting">TypeScript and Linting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#prisma-usage">Prisma Usage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mui-component-guidelines">MUI Component Guidelines</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_devops-infrastructure-project/">DevOps Infrastructure Project</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_enterprise-backend-service/">Enterprise Backend Service</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_mobile-app-development-react-native/">Mobile App Development - React Native</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_open-source-library-development/">Open Soruce Liberary Development</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_python-data-science-project/">Python Data Science Project</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_web-application-development-team/">Web Application Development Team</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Claude.md Files</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Build-Lint Check</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="build-lint-check">Build-Lint Check</h1>
+<p>From: https://www.reddit.com/r/ClaudeAI/comments/1ko5pxk/comment/msohsxt/</p>
+<h3 id="critical-rules-do-not-violate">Critical Rules - DO NOT VIOLATE</h3>
+<ul>
+<li>
+<p><strong>NEVER create mock data or simplified components</strong> unless explicitly told to do so</p>
+</li>
+<li>
+<p><strong>NEVER replace existing complex components with simplified versions</strong> - always fix the actual problem</p>
+</li>
+<li>
+<p><strong>ALWAYS work with the existing codebase</strong> - do not create new simplified alternatives</p>
+</li>
+<li>
+<p><strong>ALWAYS find and fix the root cause</strong> of issues instead of creating workarounds</p>
+</li>
+<li>
+<p>When debugging issues, focus on fixing the existing implementation, not replacing it</p>
+</li>
+<li>
+<p>When something doesn't work, debug and fix it - don't start over with a simple version</p>
+</li>
+<li>
+<p><strong>ALWAYS check MUI X v8 AND MUI v7 DOCS before making changes</strong> to MUI-related components - they have breaking changes</p>
+</li>
+</ul>
+<h3 id="typescript-and-linting">TypeScript and Linting</h3>
+<ul>
+<li>
+<p>ALWAYS add explicit types to all function parameters, variables, and return types</p>
+</li>
+<li>
+<p>ALWAYS run <code>pnpm build</code> or appropriate linter command before considering any code changes complete</p>
+</li>
+<li>
+<p>Fix all linter and TypeScript errors immediately - don't leave them for the user to fix</p>
+</li>
+<li>
+<p>When making changes to multiple files, check each one for type errors</p>
+</li>
+</ul>
+<h3 id="prisma-usage">Prisma Usage</h3>
+<ul>
+<li>
+<p>NEVER use raw SQL queries ($queryRaw, $queryRawUnsafe) - always use Prisma Client methods</p>
+</li>
+<li>
+<p>When relations don't exist in the schema, use separate queries with findMany() and create lookup maps</p>
+</li>
+<li>
+<p>Always check the Prisma schema before assuming relations exist</p>
+</li>
+</ul>
+<h3 id="mui-component-guidelines">MUI Component Guidelines</h3>
+<ul>
+<li>ALWAYS check MUI X v8 AND MUI V7 DOCS before making changes to related components. They are very new versions and likely have breaking changes you do not know about.</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../claude_devops-infrastructure-project/" class="btn btn-neutral float-right" title="DevOps Infrastructure Project">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../claude_devops-infrastructure-project/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

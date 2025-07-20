@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Enterprise Backend Service - Claude.md Files</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Enterprise Backend Service";
+        var mkdocs_page_input_path = "claude_enterprise-backend-service.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Claude.md Files
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_build-lint-check/">Build-Lint Check</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_devops-infrastructure-project/">DevOps Infrastructure Project</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Enterprise Backend Service</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#service-architecture">Service Architecture</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#development-workflow">Development Workflow</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#code-standards">Code Standards</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#package-structure">Package Structure</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#security-requirements">Security Requirements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#quality-gates">Quality Gates</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#monitoring-and-logging">Monitoring and Logging</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_mobile-app-development-react-native/">Mobile App Development - React Native</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_open-source-library-development/">Open Soruce Liberary Development</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_python-data-science-project/">Python Data Science Project</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_web-application-development-team/">Web Application Development Team</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Claude.md Files</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Enterprise Backend Service</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="project-payment-processing-microservice">Project: Payment Processing Microservice</h1>
+<h2 id="service-architecture">Service Architecture</h2>
+<ul>
+<li><strong>Framework</strong>: Spring Boot 3.1 with Java 17</li>
+<li><strong>Database</strong>: PostgreSQL with JPA/Hibernate</li>
+<li><strong>Security</strong>: OAuth 2.0 with JWT tokens</li>
+<li><strong>Documentation</strong>: OpenAPI 3.0 specifications</li>
+<li><strong>Deployment</strong>: Docker containers with Kubernetes</li>
+</ul>
+<h2 id="development-workflow">Development Workflow</h2>
+<ol>
+<li>Create feature branch: <code>backend-[ticket-number]-[description]</code></li>
+<li>Write integration tests for all new endpoints</li>
+<li>Update OpenAPI documentation for API changes</li>
+<li>Run full test suite: <code>./gradlew test integrationTest</code></li>
+<li>Ensure Docker build succeeds: <code>docker build -t payment-service .</code></li>
+<li>Commit with ticket reference: <code>feat: [TICKET-123] Add payment validation</code></li>
+</ol>
+<h2 id="code-standards">Code Standards</h2>
+<ul>
+<li>Follow Google Java Style Guide</li>
+<li>Use Spring Boot conventions for package structure</li>
+<li>All REST endpoints must have comprehensive validation</li>
+<li>Use DTOs for all external API contracts</li>
+<li>Implement proper exception handling with @ControllerAdvice</li>
+</ul>
+<h2 id="package-structure">Package Structure</h2>
+<ul>
+<li><code>controller</code>: REST endpoints and request/response handling</li>
+<li><code>service</code>: Business logic and transaction management  </li>
+<li><code>repository</code>: Data access layer with JPA repositories</li>
+<li><code>config</code>: Configuration classes and beans</li>
+<li><code>dto</code>: Data Transfer Objects for API contracts</li>
+<li><code>entity</code>: JPA entities for database mapping</li>
+<li><code>exception</code>: Custom exceptions and error handling</li>
+</ul>
+<h2 id="security-requirements">Security Requirements</h2>
+<ul>
+<li>All endpoints require authentication except health checks</li>
+<li>Validate all inputs with Bean Validation annotations</li>
+<li>Use parameterized queries to prevent SQL injection</li>
+<li>Log security events for audit trail</li>
+<li>Never expose internal entity models in API responses</li>
+</ul>
+<h2 id="quality-gates">Quality Gates</h2>
+<ul>
+<li>Minimum 85% test coverage (unit + integration)</li>
+<li>All dependencies must be up-to-date and vulnerability-free</li>
+<li>SonarQube quality gate must pass</li>
+<li>All database migrations must be reversible</li>
+<li>Performance tests must complete under 200ms for standard operations</li>
+</ul>
+<h2 id="monitoring-and-logging">Monitoring and Logging</h2>
+<ul>
+<li>Use structured logging with JSON format</li>
+<li>Include correlation IDs for request tracing</li>
+<li>Monitor key metrics: response time, error rate, throughput</li>
+<li>Implement health checks for Kubernetes readiness/liveness probes</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../claude_devops-infrastructure-project/" class="btn btn-neutral float-left" title="DevOps Infrastructure Project"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../claude_mobile-app-development-react-native/" class="btn btn-neutral float-right" title="Mobile App Development - React Native">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../claude_devops-infrastructure-project/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../claude_mobile-app-development-react-native/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

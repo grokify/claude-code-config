@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Web Application Development Team - Claude.md Files</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Web Application Development Team";
+        var mkdocs_page_input_path = "claude_web-application-development-team.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <script src="../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+      <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Claude.md Files
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_build-lint-check/">Build-Lint Check</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_devops-infrastructure-project/">DevOps Infrastructure Project</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_enterprise-backend-service/">Enterprise Backend Service</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_mobile-app-development-react-native/">Mobile App Development - React Native</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_open-source-library-development/">Open Soruce Liberary Development</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../claude_python-data-science-project/">Python Data Science Project</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Web Application Development Team</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#core-principles">Core Principles</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#development-workflow">Development Workflow</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#architecture-overview">Architecture Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#code-standards">Code Standards</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#quality-gates">Quality Gates</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#file-organization">File Organization</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Claude.md Files</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Web Application Development Team</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="project-taskflow-web-application">Project: TaskFlow Web Application</h1>
+<h2 id="core-principles">Core Principles</h2>
+<p><strong>IMPORTANT</strong>: Whenever you write code, it MUST follow SOLID design principles. Never write code that violates these principles. If you do, you will be asked to refactor it.</p>
+<h2 id="development-workflow">Development Workflow</h2>
+<ol>
+<li>Before making any changes, create and checkout a feature branch named <code>feature-[brief-description]</code></li>
+<li>Write comprehensive tests for all new functionality</li>
+<li>Compile code and run all tests before committing</li>
+<li>Write detailed commit messages explaining the changes and rationale</li>
+<li>Commit all changes to the feature branch</li>
+</ol>
+<h2 id="architecture-overview">Architecture Overview</h2>
+<ul>
+<li><strong>Frontend</strong>: Next.js 14 with TypeScript and Tailwind CSS</li>
+<li><strong>State Management</strong>: Zustand for client state, React Query for server state</li>
+<li><strong>Backend</strong>: Node.js with Express and Prisma ORM</li>
+<li><strong>Database</strong>: PostgreSQL</li>
+<li><strong>Testing</strong>: Jest for unit tests, Playwright for E2E</li>
+</ul>
+<h2 id="code-standards">Code Standards</h2>
+<ul>
+<li>Use TypeScript for all new code with strict type checking</li>
+<li>Follow the existing component structure in <code>/src/components</code></li>
+<li>API routes follow RESTful conventions in <code>/src/pages/api</code></li>
+<li>Use Prisma schema definitions for all database operations</li>
+<li>CSS classes should use Tailwind utilities; custom CSS only when necessary</li>
+</ul>
+<h2 id="quality-gates">Quality Gates</h2>
+<ul>
+<li>All code must compile without warnings</li>
+<li>Test coverage must remain above 80%</li>
+<li>All tests must pass before committing</li>
+<li>ESLint and Prettier must pass without errors</li>
+</ul>
+<h2 id="file-organization">File Organization</h2>
+<ul>
+<li>Components: <code>/src/components/[feature]/[ComponentName].tsx</code></li>
+<li>Pages: <code>/src/pages/[route].tsx</code></li>
+<li>Utilities: <code>/src/lib/[category]/[utility].ts</code></li>
+<li>Types: <code>/src/types/[domain].ts</code></li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../claude_python-data-science-project/" class="btn btn-neutral float-left" title="Python Data Science Project"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../claude_python-data-science-project/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

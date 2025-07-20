@@ -1,0 +1,12 @@
+site_name: Claude.md Files
+docs_dir: src
+theme: readthedocs
+nav:
+    - 'Home': 'index.md'
+    - 'Build-Lint Check': 'claude_build-lint-check.md'
+    - 'DevOps Infrastructure Project': 'claude_devops-infrastructure-project.md'
+    - 'Enterprise Backend Service': 'claude_enterprise-backend-service.md'
+    - 'Mobile App Development - React Native': 'claude_mobile-app-development-react-native.md'
+    - 'Open Soruce Liberary Development': 'claude_open-source-library-development.md'
+    - 'Python Data Science Project': 'claude_python-data-science-project.md'
+    - 'Web Application Development Team': 'claude_web-application-development-team.md'
