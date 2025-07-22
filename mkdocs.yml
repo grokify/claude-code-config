@@ -1,4 +1,4 @@
-site_name: Claude.md Files
+site_name: Claude Code Config Examples
 docs_dir: src
 theme: readthedocs
 nav:
